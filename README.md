@@ -17,7 +17,6 @@ project-root/
 │   │   └── form.js
 │   ├── pages/              # HTML pages
 │   │   └── form.html
-│   └── uploads/            # Temporarily stores uploaded files
 │
 ├── uploads/                # Safer location for server-side use
 │
@@ -30,7 +29,6 @@ project-root/
 │   │   └── apiRoutes.js
 │   ├── utils/              # Drawing and JSON helpers
 │   │   ├── drawCanvas.js
-│   │   └── updateJSON.js   # Optional (currently unused)
 │   └── server.js           # Entry point for backend
 │
 ├── .gitignore
