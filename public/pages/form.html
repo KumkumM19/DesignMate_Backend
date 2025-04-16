@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Update JSON and Download Canvas</title>
+      <script src="https://cdn.jsdelivr.net/npm/fabric@6.6.1/dist/index.js"></script>
+   </head>
+   <body>
+      <h2>Modify Canvas</h2>
+      <form id="updateForm" enctype="multipart/form-data">
+         <label>New Text</label>
+         <input type="text" id="nextText" name="newText" required><br><br>
+
+         <label>Upload New Image</label>
+         <input type="file" id="imageUpload" name="image" accept="image/*"><br><br>
+
+         <lable>Upload JSON File:</lable>
+         <input type="file" id="jsonUpload"  name="json" accept=".json"><br><br>
+
+         <button type="submit">Update & Download</button>
+      </form>
+
+      <!-- <script src="form.js"></script> -->
+      <script src="/js/form.js"></script>
+      <!-- <script src="/js/canvas.js"></script> -->
+
+   </body>
+</html>
