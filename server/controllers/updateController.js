@@ -109,6 +109,7 @@ async function loadCanvasFromJSON(jsonPath, ctx) {
       case "Textbox":
         ctx.save();
         ctx.translate(obj.left, obj.top);
+        ctx.textBaseline = "top";
         ctx.rotate((obj.angle || 0) * Math.PI / 180);
         ctx.scale(obj.flipX ? -obj.scaleX : obj.scaleX || 1, obj.flipY ? -obj.scaleY : obj.scaleY || 1);
         const offsetX = obj.flipX ? -obj.width : 0;
